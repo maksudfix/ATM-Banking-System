@@ -12,12 +12,12 @@ class Banking
     {
         if (amount < 0)
         {
-            Console.WriteLine("Miniman Deposit Amount 500 BDT");
+            Console.WriteLine("Minimum Deposit Amount 500 BDT");
         }
         else
         {
             balance += amount;
-            Console.WriteLine($"Amount {amount} BDT Deposited Sucessfully");
+            Console.WriteLine($"Amount {amount} BDT Deposited Successfully");
             Console.WriteLine($"Updated Balance: {balance} BDT");
         }
     }
@@ -25,7 +25,7 @@ class Banking
     {
         if (amount < 500)
         {
-            Console.WriteLine("Miniman Withdraw Amount 500 BDT");
+            Console.WriteLine("Minimum Withdraw Amount 500 BDT");
         }
         else if (amount > balance)
         {
@@ -34,7 +34,7 @@ class Banking
         else
         {
             balance -= amount;
-            Console.WriteLine($" Amount {amount} BDT Withdrawn Sucessfully");
+            Console.WriteLine($"Amount {amount} BDT Withdrawn Successfully");
             Console.WriteLine($"Updated Balance: {balance} BDT");
         }
     }
