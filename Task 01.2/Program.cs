@@ -2,12 +2,10 @@
 class Banking
 {
     public int AccountNumber { get; set; }
-    public string AccountHolder { get; set; }
     public double balance { get; set; }
-    public Banking(int accountNumber, string accountHolder, double balance)
+    public Banking(int accountNumber, double balance)
     {
         AccountNumber = accountNumber;
-        AccountHolder = accountHolder;
         this.balance = balance;
     }
     public void Deposit(double amount)
@@ -45,7 +43,7 @@ class ATM
 {
     static void Main()
     {
-        Banking account = new Banking(22103265, "Maksud", 45035);
+        Banking account = new Banking(22103265, 45035);
         while (true)
         {
             Console.Write("Select Option:\n");
