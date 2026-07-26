@@ -25,7 +25,7 @@ class Banking
     }
     public void Withdraw(double amount)
     {
-        if (amount < 0)
+        if (amount < 500)
         {
             Console.WriteLine("Miniman Withdraw Amount 500 BDT");
         }
